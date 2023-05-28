@@ -1,0 +1,12 @@
+.gridFooter {
+	margin-top: 50px;
+	display: grid;
+	
+	grid-template-columns: 2fr 1fr 1fr 1fr;
+	grid-template-rows: repeat(6, 1fr) ;
+	justify-content: center;
+	li {
+		display: flex;
+		
+	}
+}
