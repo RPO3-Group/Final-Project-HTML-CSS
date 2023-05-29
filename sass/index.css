@@ -198,3 +198,21 @@ ul {
   --box-shadow: 12px 18px 30px rgba(0, 0, 0, 0.1);
   --orange-box-shadow: 15px 15px 35px rgba(226, 142, 15, 0.18);
 }
+
+.ExclusiveNFTRingDrops-subtitle, .ExclusiveNFTRingDrops-title {
+  display: flex;
+  justify-content: center;
+}
+
+.ExclusiveNFTRingDrops-subtitle p, .ExclusiveNFTRingDrops-title h1 {
+  color: #232222;
+}
+
+.ExclusiveNFTRingDrops {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.ExclusiveNFTRingDrops-subtitle {
+  text-align: center;
+}

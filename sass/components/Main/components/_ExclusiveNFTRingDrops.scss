@@ -1,0 +1,29 @@
+%flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+%color-black {
+    color: #232222; 
+}
+
+.ExclusiveNFTRingDrops {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.ExclusiveNFTRingDrops-title {
+    @extend %flex-center;
+    h1 {
+        @extend %color-black
+    }
+}
+
+.ExclusiveNFTRingDrops-subtitle {
+    @extend %flex-center;
+    text-align: center;
+    p {
+        @extend %color-black
+    }
+}
+
