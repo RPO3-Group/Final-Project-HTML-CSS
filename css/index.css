@@ -203,10 +203,37 @@ ul {
 .gridFooter {
   margin-top: 50px;
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
-  grid-template-rows: repeat(6, 1fr);
-  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(auto, 1fr);
+  margin: 0 124px 0 124px;
+  gap: 20px;
 }
 .gridFooter li {
   display: flex;
+}
+.gridFooter li ul li ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gridFooter .circleIcon {
+  width: 40px;
+  height: 40px;
+  margin-right: 17px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(140.08deg, #9CD2EE 3.42%, #00ACEE 95.98%);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.gridFooter h3 {
+  margin: 17px 0;
+}
+.gridFooter li {
+  margin-bottom: 17px;
+}
+.gridFooter a {
+  text-decoration: none;
+  color: black;
 }
