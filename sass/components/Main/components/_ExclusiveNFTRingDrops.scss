@@ -1,36 +1,46 @@
-%flex-center {
+@mixin flex-center {
     display: flex;
     justify-content: center;
 }
 
-%color-black {
-    color: #232222; 
+@mixin cards-color {
+    background: var(--main-cards-bg-color);
 }
 
-%pading-left {
+@mixin color-black {
+    color : var(--black-color);
+}
+@mixin color-orange {
+    color: var(--orange-color);
+}
+
+@mixin pading-x {
     padding-left: 29px;
+    padding-right: 29px;
+}
+
+@mixin box-shadow {
+    box-shadow: var(--box-shadow);
 }
 
 .ExclusiveNFTRingDrops {
-    max-width: 1440px;
     margin: 0 70px;
-    font-size: Montserrat;
 }
 
 .ExclusiveNFTRingDrops-title {
-    @extend %flex-center;
+    @include flex-center;
     h1 {
-        @extend %color-black;
+        @include color-black;
         font-weight: 700;
         font-size: 48px;
     }
 }
 
 .ExclusiveNFTRingDrops-subtitle {
-    @extend %flex-center;
+    @include flex-center;
     text-align: center;
     p {
-        @extend %color-black;
+        @include color-black;
         letter-spacing: 0.1em;
         font-weight: 400;
         line-height: 163.9%;
@@ -47,17 +57,18 @@
 }
 
 .ExclusiveNFTRingDrops-block {
-    background: #F4F4F4;
+    @include cards-color;
     border-radius: 6%;
-    box-shadow: 12px 18px 30px rgba(0, 0, 0, 0.1);
+    @include box-shadow;
     li {
         &:nth-child(2) {
-            padding: 20px 0 0 29px;
+            padding-top: 20px;
+            @include pading-x;
         }
         &:nth-child(3) {
             display: flex;
             align-items: center;
-            @extend %pading-left;
+            @include pading-x;
             padding-top: 7px;
             span {
                 padding-left: 16px;
@@ -67,7 +78,7 @@
             display: flex;
             align-items: center;
             padding-top: 28px;
-            @extend %pading-left;
+            @include pading-x;
             padding-bottom: 22px;
             p {
                 padding-left: 17px;
@@ -77,15 +88,17 @@
     p {
         font-size: 18px;
         font-weight: 700;
-        color: #232222;
+        @include color-black;
         letter-spacing: 0.01em;
     }
     span {
         font-weight: 700;
-        color: #ff8e1e;
+        @include color-orange;
         font-size: 24px;
         letter-spacing: 0.01em;
     }
+    .ExclusiveNFTRingDrops-img {
+        width: 100%;
+    }
 }
-
 
