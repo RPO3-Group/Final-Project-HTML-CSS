@@ -1,14 +1,12 @@
 .gridFooter {
-	margin-top: 50px;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-rows: repeat(auto, 1fr);
-	margin: 0 124px 0 124px;
+	margin: 158px 124px 158px 124px;
 	gap: 20px;
   
 	li {
 	  display: flex;
-  
 	  ul {
 		li {
 		  ul {
@@ -19,7 +17,6 @@
 		}
 	  }
 	}
-  
 	.circleIcon {
 	  width: 40px;
 	  height: 40px;
@@ -31,15 +28,12 @@
 	  -ms-border-radius: 50%;
 	  -o-border-radius: 50%;
 	}
-  
 	h3 {
 	  margin: 17px 0;
 	}
-  
 	li {
 	  margin-bottom: 17px;
 	}
-  
 	a {
 	  text-decoration: none;
 	  color: black;

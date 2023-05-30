@@ -201,11 +201,10 @@ ul {
 }
 
 .gridFooter {
-  margin-top: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: repeat(auto, 1fr);
-  margin: 0 124px 0 124px;
+  margin: 158px 124px 158px 124px;
   gap: 20px;
 }
 .gridFooter li {
