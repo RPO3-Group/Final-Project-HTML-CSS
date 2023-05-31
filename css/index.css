@@ -159,7 +159,7 @@ template {
   display: none;
 }
 
-
+/*# sourceMappingURL=normalize.min.css.map */
 * {
   margin: 0;
   padding: 0;
@@ -198,6 +198,51 @@ ul {
   --border-radius-circle: 50%;
   --box-shadow: 12px 18px 30px rgba(0, 0, 0, 0.1);
   --orange-box-shadow: 15px 15px 35px rgba(226, 142, 15, 0.18);
+}
+
+.flexLogin {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.flexLogin ul {
+  border: 1px solid black;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 10px;
+  box-shadow: 15px 15px 35px rgba(14, 12, 9, 0.18);
+}
+.flexLogin ul li {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+.flexLogin ul li input {
+  height: 30px;
+  width: 300px;
+  padding: 0 10px;
+  border-radius: 10px;
+}
+.flexLogin ul li .btn {
+  display: flex;
+  justify-content: center;
+  width: 320px;
+  border-radius: 8px;
+  padding: 5px 0;
+}
+.flexLogin ul li .Login {
+  background-color: #ff6533;
+  color: #ffffff;
+}
+.flexLogin ul li .FB,
+.flexLogin ul li .Google {
+  background-color: #fff;
+}
+
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 15px 15px 35px rgba(14, 12, 9, 0.18);
 }
 
 .gridFooter {
