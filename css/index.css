@@ -18,7 +18,8 @@ h1 {
 }
 
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   height: 0;
   overflow: visible;
 }
@@ -104,7 +105,8 @@ fieldset {
 }
 
 legend {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: inherit;
   display: table;
   max-width: 100%;
@@ -121,7 +123,8 @@ textarea {
 }
 
 [type=checkbox], [type=radio] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
 }
 
@@ -159,7 +162,7 @@ template {
   display: none;
 }
 
-/*# sourceMappingURL=normalize.min.css.map */
+
 * {
   margin: 0;
   padding: 0;
@@ -176,6 +179,15 @@ a {
 
 ul {
   padding: 0;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
 }
 
 :root {
@@ -200,49 +212,156 @@ ul {
   --orange-box-shadow: 15px 15px 35px rgba(226, 142, 15, 0.18);
 }
 
-.flexLogin {
-  margin-top: 20px;
+.Authorization {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-}
-.flexLogin ul {
-  border: 1px solid black;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  border-radius: 10px;
-  box-shadow: 15px 15px 35px rgba(14, 12, 9, 0.18);
-}
-.flexLogin ul li {
-  display: flex;
-  justify-content: center;
-  margin: 15px;
-}
-.flexLogin ul li input {
-  height: 30px;
-  width: 300px;
-  padding: 0 10px;
-  border-radius: 10px;
-}
-.flexLogin ul li .btn {
-  display: flex;
-  justify-content: center;
-  width: 320px;
-  border-radius: 8px;
-  padding: 5px 0;
-}
-.flexLogin ul li .Login {
-  background-color: #ff6533;
-  color: #ffffff;
-}
-.flexLogin ul li .FB,
-.flexLogin ul li .Google {
-  background-color: #fff;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 20px;
 }
 
-.btn:hover {
+.Login-button,
+.Registration-button {
+  color: var(--white-color);
+  background: var(--orange-gradient);
+  border: none;
+  outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 48px;
+  width: 155px;
+  border-radius: var(--border-radius-additional);
   cursor: pointer;
-  box-shadow: 15px 15px 35px rgba(14, 12, 9, 0.18);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.Login-form,
+.Registration-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+.Login-form .Login-form__list,
+.Login-form .Registration-form__list,
+.Registration-form .Login-form__list,
+.Registration-form .Registration-form__list {
+  padding: 30px;
+  border-radius: var(--border-radius-main);
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+}
+.Login-form .Login-form__list li,
+.Login-form .Registration-form__list li,
+.Registration-form .Login-form__list li,
+.Registration-form .Registration-form__list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.Login-form .Login-form__list li h3,
+.Login-form .Registration-form__list li h3,
+.Registration-form .Login-form__list li h3,
+.Registration-form .Registration-form__list li h3 {
+  text-transform: uppercase;
+  color: var(--black-color);
+  margin-bottom: 15px;
+}
+.Login-form .Login-form__list li p,
+.Login-form .Registration-form__list li p,
+.Registration-form .Login-form__list li p,
+.Registration-form .Registration-form__list li p {
+  margin: 20px 0;
+  font-size: 20px;
+  color: var(--black-color);
+}
+.Login-form .Login-form__list li input,
+.Login-form .Registration-form__list li input,
+.Registration-form .Login-form__list li input,
+.Registration-form .Registration-form__list li input {
+  margin-bottom: 20px;
+  height: 48px;
+  width: 300px;
+  padding-left: 34px;
+  border-radius: var(--border-radius-additional);
+  background-color: var(--main-cards-bg-color);
+  border: 1px solid var(--main-cards-bg-color);
+  color: var(--black-color);
+}
+.Login-form .Login-form__list li input:hover, .Login-form .Login-form__list li input:focus,
+.Login-form .Registration-form__list li input:hover,
+.Login-form .Registration-form__list li input:focus,
+.Registration-form .Login-form__list li input:hover,
+.Registration-form .Login-form__list li input:focus,
+.Registration-form .Registration-form__list li input:hover,
+.Registration-form .Registration-form__list li input:focus {
+  border: 1px solid var(--orange-color);
+}
+
+.Additional-login__ways {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.Additional-login__ways li:first-child {
+  margin-right: 10px;
+}
+.Additional-login__ways li:last-child {
+  margin-left: 10px;
+}
+.Additional-login__ways li button {
+  border: none;
+  outline: none;
+  border-radius: var(--border-radius-additional);
+  width: 135px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.Additional-login__ways li button img {
+  margin-right: 5px;
+}
+.Additional-login__ways li .Form-Facebook__button {
+  background: -webkit-gradient(linear, left top, left bottom, from(#3a5795), to(#2b4886));
+  background: linear-gradient(to bottom, #3a5795 0%, #2b4886 100%);
+  color: var(--white-color);
+}
+.Additional-login__ways li .Form-Google__button span:first-child {
+  color: #f94631;
+}
+.Additional-login__ways li .Form-Google__button span:nth-child(2) {
+  color: #ffbc43;
+}
+.Additional-login__ways li .Form-Google__button span:last-child {
+  color: #37a553;
 }
 
 .gridFooter {
@@ -253,12 +372,20 @@ ul {
   gap: 20px;
 }
 .gridFooter li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .gridFooter li ul li ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .gridFooter .circleIcon {
   width: 40px;

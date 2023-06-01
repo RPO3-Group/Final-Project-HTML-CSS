@@ -22,3 +22,13 @@
     --box-shadow: 12px 18px 30px rgba(0, 0, 0, 0.1);
     --orange-box-shadow: 15px 15px 35px rgba(226, 142, 15, 0.18);
 }
+
+@mixin Elements-none {
+    border: none;
+    outline: none;
+}
+
+@mixin Flex-center {
+    display: flex;
+    justify-content: center;
+}

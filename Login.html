@@ -11,96 +11,96 @@
         <div class="root">
             <header class="Header"></header>
             <main class="Main">
-                <section>
-                    <form class="flexLogin">
-                        <ul>
+                <section class="Authorization">
+                    <form class="Login-form">
+                        <ul class="Login-form__list">
                             <li><h3>Login</h3></li>
                             <li>
                                 <input
-                                    id="Login"
+                                    id="userLogin"
                                     type="text"
-                                    class="validate"
-                                    placeholder="Login"
-                                />
+                                    placeholder="Login" />
                             </li>
                             <li>
                                 <input
-                                    id="password"
+                                    id="userPassword"
                                     type="password"
-                                    class="validate"
-                                    placeholder="Password"
-                                />
+                                    placeholder="Password" />
                             </li>
                             <li>
-                                <button class="btn Login">Login</button>
+                                <button class="Login-button">Login</button>
                             </li>
                             <li><p>or</p></li>
                             <li>
-                                <button class="btn Google">
-                                    Continue from Google
-                                </button>
-                            </li>
-                            <li>
-                                <button class="btn FB">
-                                    Continue from Facebook
-                                </button>
+                                <ul class="Additional-login__ways">
+                                    <li>
+                                        <button class="Form-Google__button">
+                                            <img
+                                                width="30"
+                                                height="30"
+                                                src="./images/png/google.png"
+                                                alt="Google Ico" />
+                                            Google
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button class="Form-Facebook__button">
+                                            <img
+                                                width="30"
+                                                height="30"
+                                                src="./images/png/facebook.png"
+                                                alt="Facebook ico" />
+                                            Facebook
+                                        </button>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                     </form>
 
-                    <form class="flexLogin">
-                        <ul>
+                    <form class="Registration-form">
+                        <ul class="Registration-form__list">
                             <li><h3>Registration</h3></li>
                             <li>
                                 <input
-                                    id="first_name"
-                                    type="text"
-                                    class="validate"
-                                    placeholder="First name"
-                                />
+                                    id="userName"
+                                    type="name"
+                                    placeholder="Name" />
                             </li>
                             <li>
                                 <input
-                                    id="Last_name"
-                                    type="text"
-                                    class="validate"
-                                    placeholder="Last name"
-                                />
+                                    id="userSurname"
+                                    type="surname"
+                                    placeholder="Surname" />
                             </li>
                             <li>
                                 <input
-                                    id="Login"
+                                    id="userRegistrationLogin"
                                     type="text"
-                                    class="validate"
-                                    placeholder="Login"
-                                />
+                                    placeholder="Login" />
                             </li>
                             <li>
                                 <input
-                                    id="email"
+                                    id="userEmail"
                                     type="email"
-                                    class="validate"
-                                    placeholder="Email"
-                                />
+                                    placeholder="Email" />
                             </li>
                             <li>
                                 <input
-                                    id="password"
+                                    id="userRegistrationPassword"
                                     type="password"
-                                    class="validate"
-                                    placeholder="Password"
-                                />
+                                    placeholder="Password" />
                             </li>
                             <li>
                                 <input
-                                    id="password"
+                                    id="userConfirmPassowd"
                                     type="password"
-                                    class="validate"
-                                    placeholder="Confirm password"
-                                />
+                                    placeholder="Confirm password" />
                             </li>
                             <li>
-                                <button class="btn Login">Registration</button>
+                                <button class="Registration-button">
+                                    Registration
+                                </button>
                             </li>
                         </ul>
                     </form>
