@@ -18,8 +18,7 @@ h1 {
 }
 
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   height: 0;
   overflow: visible;
 }
@@ -105,8 +104,7 @@ fieldset {
 }
 
 legend {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   color: inherit;
   display: table;
   max-width: 100%;
@@ -123,8 +121,7 @@ textarea {
 }
 
 [type=checkbox], [type=radio] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
 }
 
@@ -213,14 +210,9 @@ button {
 }
 
 .Authorization {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   margin: 20px;
 }
 
@@ -230,15 +222,9 @@ button {
   background: var(--orange-gradient);
   border: none;
   outline: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   height: 48px;
   width: 155px;
   border-radius: var(--border-radius-additional);
@@ -249,12 +235,8 @@ button {
 
 .Login-form,
 .Registration-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   height: 100%;
 }
 .Login-form .Login-form__list,
@@ -263,19 +245,14 @@ button {
 .Registration-form .Registration-form__list {
   padding: 30px;
   border-radius: var(--border-radius-main);
-  -webkit-box-shadow: var(--box-shadow);
-          box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow);
 }
 .Login-form .Login-form__list li,
 .Login-form .Registration-form__list li,
 .Registration-form .Login-form__list li,
 .Registration-form .Registration-form__list li {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 .Login-form .Login-form__list li h3,
 .Login-form .Registration-form__list li h3,
@@ -317,12 +294,8 @@ button {
 }
 
 .Additional-login__ways {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
 }
 .Additional-login__ways li:first-child {
   margin-right: 10px;
@@ -336,21 +309,14 @@ button {
   border-radius: var(--border-radius-additional);
   width: 135px;
   height: 48px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .Additional-login__ways li button img {
   margin-right: 5px;
 }
 .Additional-login__ways li .Form-Facebook__button {
-  background: -webkit-gradient(linear, left top, left bottom, from(#3a5795), to(#2b4886));
   background: linear-gradient(to bottom, #3a5795 0%, #2b4886 100%);
   color: var(--white-color);
 }
@@ -364,51 +330,60 @@ button {
   color: #37a553;
 }
 
-.gridFooter {
+.Footer {
+  margin: 12% 8%;
+}
+.Footer .gridFooter {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: repeat(auto, 1fr);
-  margin: 158px 124px 158px 124px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
   gap: 20px;
 }
-.gridFooter li {
-  display: -webkit-box;
-  display: -ms-flexbox;
+@media (min-width: 480px) {
+  .Footer .gridFooter {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 768px) {
+  .Footer .gridFooter {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1024px) {
+  .Footer .gridFooter {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+.Footer .gridFooter li {
   display: flex;
 }
-.gridFooter li ul li ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.Footer .gridFooter li ul li ul {
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-.gridFooter .circleIcon {
+.Footer .gridFooter .circleIcon {
   width: 40px;
   height: 40px;
   margin-right: 17px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(140.08deg, #9CD2EE 3.42%, #00ACEE 95.98%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(140.08deg, #9cd2ee 3.42%, #00acee 95.98%);
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-.gridFooter h3 {
+.Footer .gridFooter h3 {
   margin: 17px 0;
 }
-.gridFooter li {
+.Footer .gridFooter li {
   margin-bottom: 17px;
 }
-.gridFooter a {
+.Footer .gridFooter a {
   text-decoration: none;
   color: black;
 }
-.gridFooter p {
+.Footer .gridFooter p {
   line-height: 2;
   word-spacing: 0.4em;
 }

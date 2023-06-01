@@ -1,45 +1,67 @@
-.gridFooter {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: repeat(auto, 1fr);
-	margin: 158px 124px 158px 124px;
-	gap: 20px;
-  
-	li {
-	  display: flex;
-	  ul {
-		li {
-		  ul {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		  }
-		}
-	  }
-	}
-	.circleIcon {
-	  width: 40px;
-	  height: 40px;
-	  margin-right: 17px;
-	  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(140.08deg, #9CD2EE 3.42%, #00ACEE 95.98%);
-	  border-radius: 50%;
-	  -webkit-border-radius: 50%;
-	  -moz-border-radius: 50%;
-	  -ms-border-radius: 50%;
-	  -o-border-radius: 50%;
-	}
-	h3 {
-	  margin: 17px 0;
-	}
-	li {
-	  margin-bottom: 17px;
-	}
-	a {
-	  text-decoration: none;
-	  color: black;
-	}
-	p {
-		line-height: 2;
-		word-spacing: 0.4em;
-	}
+.Footer {
+  margin: 12% 8%;
+
+  .gridFooter {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+
+    @media (min-width: 480px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: 1024px) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    li {
+      display: flex;
+
+      ul {
+        li {
+          ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+
+    .circleIcon {
+      width: 40px;
+      height: 40px;
+      margin-right: 17px;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        linear-gradient(140.08deg, #9cd2ee 3.42%, #00acee 95.98%);
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+    }
+
+    h3 {
+      margin: 17px 0;
+    }
+
+    li {
+      margin-bottom: 17px;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    p {
+      line-height: 2;
+      word-spacing: 0.4em;
+    }
   }
+}
