@@ -331,7 +331,7 @@ button {
 }
 
 .Footer {
-  margin: 15% 10%;
+  margin: 15% 15%;
 }
 .Footer .gridFooter {
   display: grid;
@@ -347,6 +347,7 @@ button {
 @media (min-width: 768px) {
   .Footer .gridFooter {
     grid-template-columns: 1fr 1fr;
+    grid-column-gap: 110px;
   }
 }
 @media (min-width: 1024px) {
