@@ -331,39 +331,40 @@ button {
 }
 
 .Footer {
-  margin: 15% 15%;
+  margin: 15% 10%;
 }
-.Footer .body-Footer {
+.Footer .gridFooter {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   gap: 20px;
 }
 @media (min-width: 480px) {
-  .Footer .body-Footer {
+  .Footer .gridFooter {
     grid-template-columns: 1fr 1fr;
+    grid-column-gap: 110px;
   }
 }
 @media (min-width: 768px) {
-  .Footer .body-Footer {
+  .Footer .gridFooter {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 110px;
   }
 }
 @media (min-width: 1024px) {
-  .Footer .body-Footer {
+  .Footer .gridFooter {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
-.Footer .body-Footer li {
+.Footer .gridFooter li {
   display: flex;
 }
-.Footer .body-Footer li ul li ul {
+.Footer .gridFooter li ul li ul {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.Footer .body-Footer .circle-Icon {
+.Footer .gridFooter .circle-Icon {
   width: 40px;
   height: 40px;
   margin-right: 17px;
@@ -374,17 +375,17 @@ button {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-.Footer .body-Footer h3 {
+.Footer .gridFooter h3 {
   margin: 17px 0;
 }
-.Footer .body-Footer li {
+.Footer .gridFooter li {
   margin-bottom: 17px;
 }
-.Footer .body-Footer a {
+.Footer .gridFooter a {
   text-decoration: none;
   color: black;
 }
-.Footer .body-Footer p {
+.Footer .gridFooter p {
   line-height: 2;
   word-spacing: 0.4em;
 }
