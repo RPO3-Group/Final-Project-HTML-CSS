@@ -1,0 +1,104 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin cards-color {
+    background: var(--main-cards-bg-color);
+}
+
+@mixin color-black {
+    color : var(--black-color);
+}
+@mixin color-orange {
+    color: var(--orange-color);
+}
+
+@mixin pading-x {
+    padding-left: 29px;
+    padding-right: 29px;
+}
+
+@mixin box-shadow {
+    box-shadow: var(--box-shadow);
+}
+
+.ExclusiveNFTRingDrops {
+    margin: 0 70px;
+}
+
+.ExclusiveNFTRingDrops-title {
+    @include flex-center;
+    h1 {
+        @include color-black;
+        font-weight: 700;
+        font-size: 48px;
+    }
+}
+
+.ExclusiveNFTRingDrops-subtitle {
+    @include flex-center;
+    text-align: center;
+    p {
+        @include color-black;
+        letter-spacing: 0.1em;
+        font-weight: 400;
+        line-height: 163.9%;
+    }
+}
+
+.ExclusiveNFTRingDrops-grid {
+    display: grid;
+    column-gap: 20px;
+    row-gap: 24px;
+    margin-top: 56px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+}
+
+.ExclusiveNFTRingDrops-block {
+    @include cards-color;
+    border-radius: 6%;
+    @include box-shadow;
+    li {
+        &:nth-child(2) {
+            padding-top: 20px;
+            @include pading-x;
+        }
+        &:nth-child(3) {
+            display: flex;
+            align-items: center;
+            @include pading-x;
+            padding-top: 7px;
+            span {
+                padding-left: 16px;
+            }
+        }
+        &:nth-child(4) {
+            display: flex;
+            align-items: center;
+            padding-top: 28px;
+            @include pading-x;
+            padding-bottom: 22px;
+            p {
+                padding-left: 17px;
+            }
+        }
+    }
+    p {
+        font-size: 18px;
+        font-weight: 700;
+        @include color-black;
+        letter-spacing: 0.01em;
+    }
+    span {
+        font-weight: 700;
+        @include color-orange;
+        font-size: 24px;
+        letter-spacing: 0.01em;
+    }
+    .ExclusiveNFTRingDrops-img {
+        width: 100%;
+    }
+}
+
