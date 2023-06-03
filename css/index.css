@@ -223,8 +223,8 @@ main ul li.NewGenerationOfOnlineShopping h5.Second_Element_of_Generation {
 main ul li.NewGenerationOfOnlineShopping .nft_parent_wrapper {
   display: flex;
   flex-direction: row;
-  margin: 0 5% 2% 5%;
-  justify-content: space-between;
+  margin: auto;
+  justify-content: space-around;
   flex-wrap: wrap;
   font-weight: 700;
   font-size: 25px;
