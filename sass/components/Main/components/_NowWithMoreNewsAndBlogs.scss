@@ -34,28 +34,28 @@
 }
 
 .card-1 {
-    background-image: url("../../../../images/Rectangle16.png");
+    background-image: url("../images/Rectangle16.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .card-2 {
-    background-image: url("../../../../images/Rectangle16.png");
+    background-image: url("../images/Rectangle17.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .card-3 {
-    background-image: url("../../../../images/Rectangle16.png");
+    background-image: url("../images/Rectangle16.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .card-4 {
-    background-image: url("../../../../images/Rectangle16.png");
+    background-image: url("../images/Rectangle17.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -81,5 +81,23 @@
         line-height: 175.4%;
         text-align: center;
         letter-spacing: 0.02em;
+    }
+}
+
+.slider-pre-title {
+    list-style-type: none;
+    margin-left: 185px;
+    li:first-child {
+        margin-top: 80px;
+        color: #232222;
+        font-weight: 700;
+        font-size: 48px;
+    }
+    li:last-child {
+        margin: 24px 0 28px 0;
+        color: #232222;
+        font-weight: 400;
+        font-size: 20px;
+        max-width: 770px;
     }
 }
