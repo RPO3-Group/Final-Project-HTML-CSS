@@ -167,8 +167,6 @@ template {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif !important;
-  -webkit-transition: 0.5s !important;
-  transition: 0.5s !important;
 }
 
 li {
@@ -246,10 +244,7 @@ ul {
   letter-spacing: 0.02em;
 }
 .Main ul li.NewGenerationOfOnlineShopping .nft_parent_wrapper li {
-  margin-right: 20px;
-}
-.Main ul li.NewGenerationOfOnlineShopping .nft_parent_wrapper li:last-child {
-  margin-right: 0;
+  margin: 10px;
 }
 .Main ul li.NewGenerationOfOnlineShopping .nft_parent_wrapper .card_nft_wrapper {
   display: -webkit-box;
