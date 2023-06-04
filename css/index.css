@@ -203,6 +203,7 @@ ul {
 .BrowseByCategory {
   margin: 0;
   padding: 0;
+  background: #e5e5e5;
 }
 .BrowseByCategory section {
   width: 770px;
