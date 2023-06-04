@@ -1,0 +1,37 @@
+.BrowseByCategory {
+    margin: 0;
+    padding: 0;
+    section {
+        width: 770px;
+        margin-left: 335px;
+        h3 {
+            display: flex;
+            justify-content: center;
+            font-size: 48px;
+            margin: 80px 0 24px 0;
+        }
+        p {
+            display: flex;
+            justify-content: center;
+            font-size: 20px;
+            text-align: center;
+            letter-spacing: 0.02em;
+            margin-bottom: 28px;
+            color: #232222;
+        }
+    }
+    ul {
+        display: grid;
+        grid-template-columns: repeat(4, 310px);
+        gap: 28px 20px;
+        margin: 0 70px 60px 70px;
+        li {
+            list-style-type: none;
+        }
+        li:hover {
+            transform: scale(1.2);
+            transition: width 2s, height 2s, transform 2s;
+            cursor: pointer;
+        }
+    }
+}
