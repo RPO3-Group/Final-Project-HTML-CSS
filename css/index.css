@@ -434,6 +434,20 @@ ul {
   background-position: center;
 }
 
+.card-5 {
+  background-image: url("../images/slide_test6.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card-6 {
+  background-image: url("../images/slide_test1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .see-all-btn {
   position: absolute;
   width: 149px;

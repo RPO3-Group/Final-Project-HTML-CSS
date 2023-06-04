@@ -5,6 +5,7 @@ const swiper = new Swiper(slider, {
     spaceBetween: 22,
     preloadImages: true,
     loop: true,
+    initialSlide: 1,
     autoplay: {
         delay: 5000,
         disableOnInteraction: false,
