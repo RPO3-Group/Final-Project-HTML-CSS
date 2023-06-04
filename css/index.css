@@ -18,7 +18,8 @@ h1 {
 }
 
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   height: 0;
   overflow: visible;
 }
@@ -104,7 +105,8 @@ fieldset {
 }
 
 legend {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: inherit;
   display: table;
   max-width: 100%;
@@ -121,7 +123,8 @@ textarea {
 }
 
 [type=checkbox], [type=radio] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
 }
 
@@ -210,9 +213,14 @@ button {
 }
 
 .Authorization {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 20px;
 }
 
@@ -222,9 +230,15 @@ button {
   background: var(--orange-gradient);
   border: none;
   outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 48px;
   width: 155px;
   border-radius: var(--border-radius-additional);
@@ -235,8 +249,12 @@ button {
 
 .Login-form,
 .Registration-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 100%;
 }
 .Login-form .Login-form__list,
@@ -245,14 +263,19 @@ button {
 .Registration-form .Registration-form__list {
   padding: 30px;
   border-radius: var(--border-radius-main);
-  box-shadow: var(--box-shadow);
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
 }
 .Login-form .Login-form__list li,
 .Login-form .Registration-form__list li,
 .Registration-form .Login-form__list li,
 .Registration-form .Registration-form__list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .Login-form .Login-form__list li h3,
 .Login-form .Registration-form__list li h3,
@@ -294,8 +317,12 @@ button {
 }
 
 .Additional-login__ways {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 .Additional-login__ways li:first-child {
   margin-right: 10px;
@@ -309,14 +336,21 @@ button {
   border-radius: var(--border-radius-additional);
   width: 135px;
   height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .Additional-login__ways li button img {
   margin-right: 5px;
 }
 .Additional-login__ways li .Form-Facebook__button {
+  background: -webkit-gradient(linear, left top, left bottom, from(#3a5795), to(#2b4886));
   background: linear-gradient(to bottom, #3a5795 0%, #2b4886 100%);
   color: var(--white-color);
 }
@@ -331,22 +365,38 @@ button {
 }
 
 .Footer {
-  margin: 10% 8%;
+  margin: 10% 0;
 }
 .Footer .body-Footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-.Footer .body-Footer ul:nth-child(1) {
-  max-width: 350px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .Footer .body-Footer li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  margin-right: 47px;
+}
+.Footer .body-Footer li:last-child {
+  margin-right: 0px;
+}
+.Footer .body-Footer li ul:first-child {
+  max-width: 350px;
 }
 .Footer .body-Footer li ul li ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 .Footer .body-Footer .circle-Icon {
