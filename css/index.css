@@ -201,13 +201,7 @@ ul {
 }
 
 .BrowseByCategory {
-  margin: 0;
-  padding: 0;
   background: #e5e5e5;
-}
-.BrowseByCategory section {
-  width: 770px;
-  margin-left: 335px;
 }
 .BrowseByCategory section h3 {
   display: flex;
@@ -229,12 +223,12 @@ ul {
   grid-template-columns: repeat(4, 310px);
   gap: 28px 20px;
   margin: 0 70px 60px 70px;
+  justify-content: center;
 }
 .BrowseByCategory ul li {
   list-style-type: none;
 }
 .BrowseByCategory ul li:hover {
-  transform: scale(1.2);
-  transition: width 2s, height 2s, transform 2s;
+  transform: scale(1.06);
   cursor: pointer;
 }
