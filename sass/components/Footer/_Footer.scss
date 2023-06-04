@@ -4,7 +4,6 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-
         li {
             display: -webkit-box;
             display: -ms-flexbox;
@@ -32,7 +31,6 @@
                 }
             }
         }
-
         .circle-Icon {
             width: 40px;
             height: 40px;
@@ -55,20 +53,16 @@
             -ms-border-radius: 50%;
             -o-border-radius: 50%;
         }
-
         h3 {
             margin: 17px 0;
         }
-
         li {
             margin-bottom: 17px;
         }
-
         a {
             text-decoration: none;
             color: black;
         }
-
         p {
             line-height: 2;
             word-spacing: 0.4em;
