@@ -407,28 +407,28 @@ ul {
 }
 
 .card-1 {
-  background-image: url("../images/slide1.png");
+  background-image: url("../images/slide_test2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .card-2 {
-  background-image: url("../images/slide2.png");
+  background-image: url("../images/slide_test3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .card-3 {
-  background-image: url("../images/slide1.png");
+  background-image: url("../images/slide_test4.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .card-4 {
-  background-image: url("../images/slide2.png");
+  background-image: url("../images/slide_test5.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
