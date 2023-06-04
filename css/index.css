@@ -386,6 +386,7 @@ ul {
 
 .card {
   height: 470px;
+  cursor: pointer;
 }
 .card .card-title {
   background: #f4f4f4;
@@ -449,6 +450,7 @@ ul {
 }
 
 .see-all-btn {
+  cursor: pointer;
   position: absolute;
   width: 149px;
   height: 48px;
