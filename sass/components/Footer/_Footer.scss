@@ -1,0 +1,77 @@
+.Footer {
+    margin: 10% 0;
+    .body-Footer {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        li {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            margin-right: 10%;
+            &:last-child {
+                margin-right: 0px;
+            }
+            ul {
+                &:first-child {
+                    max-width: 350px;
+                }
+                li {
+                    ul {
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+
+        .circle-Icon {
+            width: 40px;
+            height: 40px;
+            margin-right: 17px;
+            background: -webkit-linear-gradient(
+                    0deg,
+                    rgba(0, 0, 0, 0.2),
+                    rgba(0, 0, 0, 0.2)
+                ),
+                -webkit-linear-gradient(140.08deg, #9cd2ee 3.42%, #00acee 95.98%);
+            background: linear-gradient(
+                    0deg,
+                    rgba(0, 0, 0, 0.2),
+                    rgba(0, 0, 0, 0.2)
+                ),
+                linear-gradient(140.08deg, #9cd2ee 3.42%, #00acee 95.98%);
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+        }
+
+        h3 {
+            margin: 17px 0;
+        }
+
+        li {
+            margin-bottom: 17px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        p {
+            line-height: 2;
+            word-spacing: 0.4em;
+        }
+    }
+}

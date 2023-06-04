@@ -1,0 +1,114 @@
+@mixin Interactive-elements__sizes {
+    height: 48px;
+    width: 300px;
+}
+
+@mixin Input-form {
+    @include Interactive-elements__sizes;
+    padding-left: 34px;
+    border-radius: var(--border-radius-additional);
+    background-color: var(--main-cards-bg-color);
+    border: 1px solid var(--main-cards-bg-color);
+    color: var(--black-color);
+    &:hover,
+    &:focus {
+        border: 1px solid var(--orange-color);
+    }
+}
+
+@mixin Form-button {
+    @include Elements-none;
+    @include Flex-center;
+    align-items: center;
+    height: 48px;
+    width: 155px;
+    border-radius: var(--border-radius-additional);
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.Authorization {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.Login-button,
+.Registration-button {
+    color: var(--white-color);
+    background: var(--orange-gradient);
+    @include Form-button;
+}
+
+.Login-form,
+.Registration-form {
+    @include Flex-center;
+    height: 100%;
+    .Login-form__list,
+    .Registration-form__list {
+        padding: 30px;
+        border-radius: var(--border-radius-main);
+        box-shadow: var(--box-shadow);
+        li {
+            h3 {
+                text-transform: uppercase;
+                color: var(--black-color);
+                margin-bottom: 15px;
+            }
+            p {
+                margin: 20px 0;
+                font-size: 20px;
+                color: var(--black-color);
+            }
+            @include Flex-center;
+            input {
+                margin-bottom: 20px;
+                @include Input-form;
+            }
+        }
+    }
+}
+
+.Additional-login__ways {
+    display: flex;
+    justify-content: space-evenly;
+    li {
+        &:first-child {
+            margin-right: 10px;
+        }
+        &:last-child {
+            margin-left: 10px;
+        }
+        button {
+            @include Elements-none;
+            border-radius: var(--border-radius-additional);
+            width: 135px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+                margin-right: 5px;
+            }
+        }
+        .Form-Facebook__button {
+            background: linear-gradient(to bottom, #3a5795 0%, #2b4886 100%);
+            color: var(--white-color);
+        }
+        .Form-Google__button {
+            span {
+                &:first-child {
+                    color: #f94631;
+                }
+                &:nth-child(2) {
+                    color: #ffbc43;
+                }
+                &:last-child {
+                    color: #37a553;
+                }
+            }
+        }
+    }
+}
