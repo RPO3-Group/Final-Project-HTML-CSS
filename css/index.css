@@ -366,3 +366,65 @@ ul {
 .ExclusiveNFTRingDrops-block .ExclusiveNFTRingDrops-img {
   width: 100%;
 }
+
+.Footer {
+  margin: 10% 0;
+}
+.Footer .body-Footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.Footer .body-Footer li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 10%;
+}
+.Footer .body-Footer li:last-child {
+  margin-right: 0px;
+}
+.Footer .body-Footer li ul:first-child {
+  max-width: 350px;
+}
+.Footer .body-Footer li ul li ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.Footer .body-Footer .circle-Icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 17px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(140.08deg, #9cd2ee 3.42%, #00acee 95.98%);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.Footer .body-Footer h3 {
+  margin: 17px 0;
+}
+.Footer .body-Footer li {
+  margin-bottom: 17px;
+}
+.Footer .body-Footer a {
+  text-decoration: none;
+  color: black;
+}
+.Footer .body-Footer p {
+  line-height: 2;
+  word-spacing: 0.4em;
+}
