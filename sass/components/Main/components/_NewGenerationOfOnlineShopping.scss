@@ -3,22 +3,17 @@
         li.NewGenerationOfOnlineShopping {
             background-color: var(--main-bg-color);
             h1.First_Element_of_Generation {
+                @include maxSizeHeaderText;
+                @include color-black;
                 margin: 60px auto 20px;
                 padding-top: 3%;
-                letter-spacing: 0.02em;
-                text-align: center;
-                width: 20%;
-                color: var(--black-color);
+                width: 30%;
             }
             h5.Second_Element_of_Generation {
+                @include minSizeHeaderText;
+                @include color-black;
                 margin: 0 auto 3%;
-                width: 22%;
-                text-align: center;
-                font-weight: 400;
-                font-size: 11px;
-                line-height: 163.9%;
-                letter-spacing: 0.02em;
-                color: var(--black-color);
+                width: 42%;
             }
             .nft_parent_wrapper {
                 display: flex;
@@ -31,12 +26,8 @@
                 text-align: center;
                 letter-spacing: 0.02em;
                 li {
-                    margin-right: 20px;
-                    &:last-child {
-                        margin-right: 0;
-                    }
+                    margin: 10px;
                 }
-
                 .card_nft_wrapper {
                     display: flex;
                     border-radius: 20px;

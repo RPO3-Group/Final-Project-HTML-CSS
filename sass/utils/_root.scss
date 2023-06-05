@@ -22,3 +22,40 @@
     --box-shadow: 12px 18px 30px rgba(0, 0, 0, 0.1);
     --orange-box-shadow: 15px 15px 35px rgba(226, 142, 15, 0.18);
 }
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin cards-color {
+    background: var(--main-cards-bg-color);
+}
+
+@mixin color-black {
+    color: var(--black-color);
+}
+@mixin color-orange {
+    color: var(--orange-color);
+}
+
+@mixin pading-x {
+    padding-left: 29px;
+    padding-right: 29px;
+}
+
+@mixin box-shadow {
+    box-shadow: var(--box-shadow);
+}
+@mixin maxSizeHeaderText {
+    text-align: center;
+    letter-spacing: 0.02em;
+    font-weight: 700;
+    font-size: 48px;
+}
+@mixin minSizeHeaderText {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
