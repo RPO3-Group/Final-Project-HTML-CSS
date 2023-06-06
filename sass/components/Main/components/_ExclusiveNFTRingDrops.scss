@@ -52,8 +52,10 @@
     column-gap: 20px;
     row-gap: 24px;
     margin-top: 56px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+    grid-template-rows: auto;
+	grid-auto-flow: row;
+	justify-content: center;
 }
 
 .ExclusiveNFTRingDrops-block {
