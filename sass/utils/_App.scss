@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: "Montserrat", sans-serif !important;
+    box-sizing: border-box;
 }
 
 li {
@@ -14,4 +15,11 @@ a {
 
 ul {
     padding: 0;
+}
+
+button,
+input,
+textarea {
+    border: none;
+    outline: none;
 }

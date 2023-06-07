@@ -1,1 +1,174 @@
+.Header {
+    .background-img {
+        position: relative;
+        z-index: -1;
+        img {
+            width: 100%;
+            min-height: 832px;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
 
+.for-button {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 175.4%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--white-color);
+}
+
+.information {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    .header-top {
+        display: flex;
+        position: fixed;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 99;
+        width: 100%;
+        background-color: #11111d66;
+        backdrop-filter: blur(10px);
+        height: 5rem;
+        .logo-wraper {
+            li {
+                display: flex;
+                align-items: center;
+                a:nth-child(2) {
+                    margin-left: 1rem;
+                }
+            }
+        }
+        .a-wraper {
+            li {
+                display: flex;
+                flex-wrap: wrap;
+                padding-right: 1rem;
+            }
+        }
+        .login-button {
+            border: none;
+            background: var(--orange-gradient);
+            border-radius: 10px;
+            width: 7.0625rem;
+            height: 3rem;
+            box-shadow: var(--orange-box-shadow);
+        }
+    }
+}
+
+.information-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    max-height: 43rem;
+    .wraper-information {
+        h1 {
+            margin-top: 9.2vw;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 68px;
+            color: var(--white-color);
+        }
+        .information-text {
+            display: block;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 157.9%;
+            letter-spacing: 0.02em;
+            margin-top: 2.5rem;
+            margin-bottom: 2.5rem;
+            color: var(--white-color);
+        }
+        display: flex;
+        flex-direction: column;
+        width: 29.5rem;
+        .buttons {
+            display: flex;
+        }
+    }
+}
+
+.curent-pice {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 15.9375rem;
+    height: 12em;
+    background: var(--blue-gradient);
+    box-shadow: var(--header-crypto-shadow);
+    border-radius: 10px;
+    h2 {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 175.4%;
+        letter-spacing: 0.02em;
+        color: var(--additional-white-color);
+        margin-left: 1.25em;
+    }
+    ul {
+        display: flex;
+        align-items: center;
+        li {
+            margin-left: 0.87em;
+        }
+    }
+    .curent-pice_ul-1 {
+        margin-left: 0.81em;
+        li:nth-child(2) {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 175.4%;
+            letter-spacing: 0.02em;
+            color: var(--additional-white-color);
+        }
+        li:nth-child(3) {
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 175.4%;
+            letter-spacing: 0.02em;
+            color: var(--additional-white-color);
+        }
+    }
+    .curent-pice_ul-2 {
+        margin-left: 0.81em;
+        li:nth-child(2) {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 175.4%;
+            letter-spacing: 0.02em;
+            color: var(--additional-white-color);
+        }
+    }
+}
+.Explore-button {
+    width: 9.6rem;
+    height: 3rem;
+    background: var(--orange-gradient);
+    border-radius: 10px;
+}
+#Create {
+    width: 9.6rem;
+    height: 3rem;
+    border: 1px solid var(--orange-color);
+    background-color: transparent;
+    border-radius: 10px;
+    margin-left: 1.25rem;
+}
+
+.header-a {
+    color: var(--white-color);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 175.4%;
+    letter-spacing: 0.02em;
+    margin-left: 2.1rem;
+}
