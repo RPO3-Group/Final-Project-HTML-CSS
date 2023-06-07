@@ -31,12 +31,8 @@
                 text-align: center;
                 letter-spacing: 0.02em;
                 li {
-                    margin-right: 20px;
-                    &:last-child {
-                        margin-right: 0;
-                    }
+                    margin: 10px;
                 }
-
                 .card_nft_wrapper {
                     display: flex;
                     border-radius: 20px;
