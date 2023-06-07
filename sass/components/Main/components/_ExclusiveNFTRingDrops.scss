@@ -1,28 +1,3 @@
-@mixin flex-center {
-    display: flex;
-    justify-content: center;
-}
-
-@mixin cards-color {
-    background: var(--main-cards-bg-color);
-}
-
-@mixin color-black {
-    color : var(--black-color);
-}
-@mixin color-orange {
-    color: var(--orange-color);
-}
-
-@mixin pading-x {
-    padding-left: 29px;
-    padding-right: 29px;
-}
-
-@mixin box-shadow {
-    box-shadow: var(--box-shadow);
-}
-
 .ExclusiveNFTRingDrops {
     margin: 0 70px;
 }
@@ -31,19 +6,15 @@
     @include flex-center;
     h1 {
         @include color-black;
-        font-weight: 700;
-        font-size: 48px;
+        @include maxSizeHeaderText;
     }
 }
 
 .ExclusiveNFTRingDrops-subtitle {
     @include flex-center;
-    text-align: center;
     p {
         @include color-black;
-        letter-spacing: 0.1em;
-        font-weight: 400;
-        line-height: 163.9%;
+        @include minSizeHeaderText;
     }
 }
 
@@ -101,4 +72,3 @@
         width: 100%;
     }
 }
-
