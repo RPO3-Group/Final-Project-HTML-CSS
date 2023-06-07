@@ -36,46 +36,40 @@
     }
 }
 
-.card-1 {
-    background-image: url("../images/slide_test2.jpg");
+@mixin CardImage {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.card-1 {
+    background-image: url("../images/slide_test2.jpg");
+    @include CardImage;
 }
 
 .card-2 {
     background-image: url("../images/slide_test3.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    @include CardImage;
 }
 
 .card-3 {
     background-image: url("../images/slide_test4.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    @include CardImage;
 }
 
 .card-4 {
     background-image: url("../images/slide_test5.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    @include CardImage;
 }
 
 .card-5 {
     background-image: url("../images/slide_test6.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    @include CardImage;
 }
 
 .card-6 {
     background-image: url("../images/slide_test1.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    @include CardImage;
 }
 
 .see-all-btn {
