@@ -3,24 +3,9 @@
     justify-content: center;
 }
 
-@mixin cards-color {
-    background: var(--main-cards-bg-color);
-}
-
-@mixin color-black {
-    color : var(--black-color);
-}
-@mixin color-orange {
-    color: var(--orange-color);
-}
-
 @mixin pading-x {
     padding-left: 29px;
     padding-right: 29px;
-}
-
-@mixin box-shadow {
-    box-shadow: var(--box-shadow);
 }
 
 .ExclusiveNFTRingDrops {
@@ -40,7 +25,7 @@
     @include flex-center;
     text-align: center;
     p {
-        @include color-black;
+        color: var(--black-color);
         letter-spacing: 0.1em;
         font-weight: 400;
         line-height: 163.9%;
@@ -57,9 +42,9 @@
 }
 
 .ExclusiveNFTRingDrops-block {
-    @include cards-color;
+    background: var(--main-cards-bg-color);
     border-radius: 6%;
-    @include box-shadow;
+    box-shadow: var(--box-shadow);
     li {
         &:nth-child(2) {
             padding-top: 20px;
@@ -88,12 +73,12 @@
     p {
         font-size: 18px;
         font-weight: 700;
-        @include color-black;
+        color: var(--black-color);
         letter-spacing: 0.01em;
     }
     span {
         font-weight: 700;
-        @include color-orange;
+        color: var(--orange-color);
         font-size: 24px;
         letter-spacing: 0.01em;
     }
