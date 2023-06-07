@@ -15,7 +15,7 @@
 .ExclusiveNFTRingDrops-title {
     @include flex-center;
     h1 {
-        @include color-black;
+        color: var(--black-color);
         font-weight: 700;
         font-size: 48px;
     }
