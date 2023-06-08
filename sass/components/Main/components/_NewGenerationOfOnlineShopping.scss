@@ -66,6 +66,7 @@
                 justify-content: center;
                 button.Buy-button {
                     @include Form-button;
+                    @include Elements-none;
                     color: var(--white-color);
                     background: var(--orange-gradient);
                     border-radius: var(--border-radius-main);
