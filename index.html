@@ -6,6 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link
             rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+
+        <link
+            rel="stylesheet"
             href="https://unpkg.com/swiper/swiper-bundle.min.css" />
         <link rel="stylesheet" href="./css/index.min.css" />
         <title>Document</title>
@@ -31,30 +35,167 @@
                                         src="./images/green_color_buble.png"
                                         alt="green_color_buble"
                                         class="Bubles_img" />
-                                    <span>Green Ring</span>
+                                    <span
+                                        class="modal-trigger"
+                                        data-target="modal1"
+                                        >Green Ring</span
+                                    >
                                 </li>
                                 <li class="card_nft_wrapper">
                                     <img
                                         src="./images/red_color_buble.png"
                                         alt="red_color_buble"
                                         class="Bubles_img" />
-                                    <span>Red Ring</span>
+                                    <span
+                                        class="modal-trigger"
+                                        data-target="modal2"
+                                        >Red Ring</span
+                                    >
                                 </li>
                                 <li class="card_nft_wrapper">
                                     <img
                                         src="./images/purple_color_buble.png"
                                         alt="purple_color_buble"
                                         class="Bubles_img" />
-                                    <span>Purple Ring</span>
+                                    <span
+                                        class="modal-trigger"
+                                        data-target="modal3"
+                                        >Purple Ring</span
+                                    >
                                 </li>
                                 <li class="card_nft_wrapper">
                                     <img
                                         src="./images/blue_color_buble.png"
                                         alt="blue_color_buble"
                                         class="Bubles_img" />
-                                    <span>Blue Ring</span>
+                                    <span
+                                        class="modal-trigger"
+                                        data-target="modal4"
+                                        >Blue Ring</span
+                                    >
                                 </li>
                             </ul>
+                            <div
+                                id="modal1"
+                                class="modal modal-fixed-width green-ring-modal"
+                                style="width: 45em">
+                                <section class="modal-content">
+                                    <h4>Green Ring</h4>
+                                    <p>
+                                        "Green Ring" - a unique accessory with
+                                        an emerald hue that captivates with its
+                                        elegance and style. This ring
+                                        effortlessly complements any outfit,
+                                        adding a touch of natural beauty and
+                                        sophistication. The irresistible
+                                        combination of color and shape creates
+                                        an impressive look that will be
+                                        remembered for a long time.
+                                    </p>
+                                </section>
+                                <section class="modal-footer">
+                                    <a
+                                        href="#"
+                                        class="modal-close waves-effect waves-green btn"
+                                        >Buy</a
+                                    >
+                                    <a
+                                        href="#"
+                                        class="modal-close waves-effect waves-green btn"
+                                        >Close</a
+                                    >
+                                </section>
+                            </div>
+                            <div
+                                id="modal2"
+                                class="modal modal-fixed-width red-ring-modal"
+                                style="width: 45em">
+                                <section class="modal-content">
+                                    <h4>Red Ring</h4>
+                                    <p>
+                                        "Red Ring" - an exquisite accessory that
+                                        radiates passion and vibrancy. The rich
+                                        red color of this ring commands
+                                        attention and symbolizes love and
+                                        strength. With its bold and captivating
+                                        presence, it makes a statement and adds
+                                        a touch of fiery elegance to any
+                                        ensemble.
+                                    </p>
+                                </section>
+                                <section class="modal-footer">
+                                    <a
+                                        href="#"
+                                        class="modal-close waves-effect waves-green btn"
+                                        >Buy</a
+                                    >
+                                    <a
+                                        href="#"
+                                        class="modal-close waves-effect waves-green btn"
+                                        >Close</a
+                                    >
+                                </section>
+                            </div>
+                            <div
+                                id="modal3"
+                                class="modal modal-fixed-width purple-ring-modal"
+                                style="width: 45em">
+                                <section class="modal-content">
+                                    <h4>Purple Ring</h4>
+                                    <p>
+                                        "Purple Ring" - a regal and enchanting
+                                        accessory that exudes a sense of mystery
+                                        and royalty. The deep purple hue of this
+                                        ring is associated with luxury and
+                                        power. Its captivating beauty and unique
+                                        charm make it a standout piece, perfect
+                                        for those seeking to make a bold fashion
+                                        statement.
+                                    </p>
+                                </section>
+                                <section class="modal-footer">
+                                    <a
+                                        href="#"
+                                        class="modal-close waves-effect waves-green btn"
+                                        >Buy</a
+                                    >
+                                    <a
+                                        href="#"
+                                        class="modal-close waves-effect waves-green btn"
+                                        >Close</a
+                                    >
+                                </section>
+                            </div>
+                            <div
+                                id="modal4"
+                                class="modal modal-fixed-width blue-ring-modal"
+                                style="width: 45em">
+                                <section class="modal-content">
+                                    <h4>Blue Ring</h4>
+                                    <p>
+                                        "Blue Ring" - a serene and mesmerizing
+                                        accessory reminiscent of the calmness of
+                                        the ocean and the vastness of the sky.
+                                        The tranquil blue color of this ring
+                                        evokes a sense of peace and harmony. Its
+                                        understated elegance and timeless appeal
+                                        make it a versatile piece that can
+                                        effortlessly elevate any look.
+                                    </p>
+                                </section>
+                                <section class="modal-footer">
+                                    <a
+                                        href="#"
+                                        class="modal-close waves-effect waves-green btn"
+                                        >Buy</a
+                                    >
+                                    <a
+                                        href="#"
+                                        class="modal-close waves-effect waves-green btn"
+                                        >Close</a
+                                    >
+                                </section>
+                            </div>
                         </section>
                     </li>
                     <li class="ExclusiveNFTRingDrops">
@@ -430,5 +571,6 @@
         </div>
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <script src="./js/index.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     </body>
 </html>
