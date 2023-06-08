@@ -59,3 +59,13 @@
     text-align: center;
     letter-spacing: 0.02em;
 }
+@mixin Form-button {
+    @include Flex-center;
+    align-items: center;
+    height: 48px;
+    width: 155px;
+    border-radius: var(--border-radius-additional);
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 20px;
+}

@@ -306,13 +306,26 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.Main ul .green-ring-modal section.modal-footer a,
-.Main ul .red-ring-modal section.modal-footer a,
-.Main ul .purple-ring-modal section.modal-footer a,
-.Main ul .blue-ring-modal section.modal-footer a {
-  margin-right: 1em;
-  border-radius: 20px;
-  background: var(--orange-color);
+.Main ul .green-ring-modal section.modal-footer button.Buy-button,
+.Main ul .red-ring-modal section.modal-footer button.Buy-button,
+.Main ul .purple-ring-modal section.modal-footer button.Buy-button,
+.Main ul .blue-ring-modal section.modal-footer button.Buy-button {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 48px;
+  width: 155px;
+  border-radius: var(--border-radius-additional);
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 20px;
+  height: 48px;
+  width: 300px;
+  color: var(--white-color);
+  background: var(--orange-gradient);
+  border-radius: var(--border-radius-main);
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
 }
 
 .ExclusiveNFTRingDrops {
