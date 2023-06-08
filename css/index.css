@@ -267,6 +267,54 @@ ul {
   color: var(--white-color);
   background: var(--orange-gradient);
 }
+.Main ul .green-ring-modal,
+.Main ul .red-ring-modal,
+.Main ul .purple-ring-modal,
+.Main ul .blue-ring-modal {
+  border-radius: 20px;
+  border: 2px solid var(--orange-color);
+}
+.Main ul .green-ring-modal section.modal-content h4,
+.Main ul .red-ring-modal section.modal-content h4,
+.Main ul .purple-ring-modal section.modal-content h4,
+.Main ul .blue-ring-modal section.modal-content h4 {
+  color: var(--black-color);
+  text-align: center;
+  letter-spacing: 0.02em;
+  font-weight: 700;
+  font-size: 48px;
+  border-bottom: 2px solid var(--orange-color);
+}
+.Main ul .green-ring-modal section.modal-content p,
+.Main ul .red-ring-modal section.modal-content p,
+.Main ul .purple-ring-modal section.modal-content p,
+.Main ul .blue-ring-modal section.modal-content p {
+  color: var(--black-color);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+.Main ul .green-ring-modal section.modal-footer,
+.Main ul .red-ring-modal section.modal-footer,
+.Main ul .purple-ring-modal section.modal-footer,
+.Main ul .blue-ring-modal section.modal-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.Main ul .green-ring-modal section.modal-footer a,
+.Main ul .red-ring-modal section.modal-footer a,
+.Main ul .purple-ring-modal section.modal-footer a,
+.Main ul .blue-ring-modal section.modal-footer a {
+  margin-right: 1em;
+  border-radius: 20px;
+  background: var(--orange-color);
+}
 
 .ExclusiveNFTRingDrops {
   margin: 0 70px;
