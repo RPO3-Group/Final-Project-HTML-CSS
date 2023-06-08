@@ -69,3 +69,7 @@
     font-weight: 700;
     font-size: 20px;
 }
+@mixin Elements-none {
+    border: none;
+    outline: none;
+}
