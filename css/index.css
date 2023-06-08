@@ -272,7 +272,6 @@ ul {
 .Main ul .purple-ring-modal,
 .Main ul .blue-ring-modal {
   border-radius: 20px;
-  border: 2px solid var(--orange-color);
 }
 .Main ul .green-ring-modal section.modal-content h4,
 .Main ul .red-ring-modal section.modal-content h4,
