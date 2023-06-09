@@ -1,6 +1,12 @@
+@mixin card-background {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .NowWithMoreNewsAndBlogs {
     max-width: 1440px;
-    background: #fff;
+    background: var(--white-color);
     align-items: center;
     margin: 0 auto;
     overflow: hidden;
@@ -17,7 +23,7 @@
     height: 470px;
     cursor: pointer;
     .card-title {
-        background: #f4f4f4;
+        background: var(--main-cards-bg-color);
         width: 60%;
         height: 20%;
         position: relative;
@@ -26,7 +32,7 @@
         div {
             padding: 10px;
             max-width: 200px;
-            color: #232222;
+            color: var(--black-color);
             font-weight: 700;
             font-size: 24px;
             line-height: 141.9%;
@@ -38,44 +44,32 @@
 
 .card-1 {
     background-image: url("../images/slide_test2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    @include card-background;
 }
 
 .card-2 {
     background-image: url("../images/slide_test3.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    @include card-background;
 }
 
 .card-3 {
     background-image: url("../images/slide_test4.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    @include card-background;
 }
 
 .card-4 {
     background-image: url("../images/slide_test5.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    @include card-background;
 }
 
 .card-5 {
     background-image: url("../images/slide_test6.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    @include card-background;
 }
 
 .card-6 {
     background-image: url("../images/slide_test1.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    @include card-background;
 }
 
 .see-all-btn {
@@ -83,8 +77,7 @@
     position: absolute;
     width: 149px;
     height: 48px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-        linear-gradient(140.08deg, #9cd2ee 3.42%, #00acee 95.98%);
+    background: var(--blue-gradient);
     border-radius: 10px;
     right: 420px;
     top: 280px;
@@ -93,7 +86,7 @@
     div {
         position: relative;
         top: 7px;
-        color: #ffffff;
+        color: var(--white-color);
         font-weight: 700;
         font-size: 20px;
         line-height: 175.4%;
@@ -107,7 +100,7 @@
     margin-left: 185px;
     li:first-child {
         margin-top: 80px;
-        color: #232222;
+        color: var(--black-color);
         font-weight: 700;
         font-size: 48px;
     }
