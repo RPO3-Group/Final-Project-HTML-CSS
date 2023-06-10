@@ -470,12 +470,8 @@ button {
 }
 .Footer .body-Footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-}
-.Footer .body-Footer li {
-  display: flex;
-  margin-right: 10%;
 }
 .Footer .body-Footer li:last-child {
   margin-right: 0px;
@@ -483,8 +479,25 @@ button {
 .Footer .body-Footer li ul {
   min-width: 200px;
 }
-.Footer .body-Footer li ul:first-child {
-  max-width: 400px;
+@media (min-width: 1440px) {
+  .Footer .body-Footer li ul:first-child {
+    max-width: 350px;
+  }
+}
+@media (max-width: 1440px) {
+  .Footer .body-Footer li ul:first-child {
+    margin: auto 10%;
+  }
+}
+@media (max-width: 768px) {
+  .Footer .body-Footer li ul:first-child {
+    margin: 2%;
+  }
+}
+@media (max-width: 600px) {
+  .Footer .body-Footer li ul:first-child {
+    width: 200px;
+  }
 }
 .Footer .body-Footer li ul li ul {
   display: flex;

@@ -2,19 +2,36 @@
   margin: 10% 0;
   .body-Footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+
     li {
-      display: flex;
-      margin-right: 10%;
+      
+      
+	  	@media(max-width: 768px)  {
+			
+	}
+
       &:last-child {
         margin-right: 0px;
       }
       ul {
-        min-width: 200px;
+		min-width: 200px;
         &:first-child {
+		@media (min-width:1440px) {
+			max-width: 350px;
+		}
+		@media (max-width:1440px) {
+			margin: auto 10%;
 			
-          max-width: 400px;
+		}
+		@media(max-width: 768px)  {
+			margin: 2%;
+		}
+		@media(max-width: 600px)  {
+			width: 200px;
+		}
+
         }
         li {
           ul {
