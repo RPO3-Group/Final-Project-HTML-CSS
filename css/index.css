@@ -777,6 +777,8 @@ textarea {
 .Header .background-img {
   position: relative;
   z-index: -1;
+  overflow: hidden;
+  width: 100%;
 }
 .Header .background-img img {
   width: 100%;
@@ -829,12 +831,18 @@ textarea {
 .information .header-top .logo-wraper li a:nth-child(2) {
   margin-left: 1rem;
 }
-.information .header-top .a-wraper li {
+.information .header-top .a-wraper {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+.information .header-top .a-wraper li {
   padding-right: 1rem;
 }
 .information .header-top .login-button {
@@ -850,7 +858,6 @@ textarea {
 .information-2 {
   position: absolute;
   width: 100%;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -871,7 +878,9 @@ textarea {
           flex-direction: column;
   width: 29.5rem;
 }
-.information-2 .wraper-information h1 {
+.information-2 .wraper-information .information-2__title {
+  display: block;
+  max-width: 80%;
   margin-top: 9.2vw;
   font-weight: 700;
   font-size: 48px;
@@ -880,6 +889,8 @@ textarea {
 }
 .information-2 .wraper-information .information-text {
   display: block;
+  max-width: 80%;
+  word-wrap: break-word;
   font-weight: 400;
   font-size: 20px;
   line-height: 157.9%;
@@ -918,7 +929,7 @@ textarea {
   line-height: 175.4%;
   letter-spacing: 0.02em;
   color: var(--additional-white-color);
-  margin-left: 1.25em;
+  margin-left: 1.5em;
 }
 .curent-pice ul {
   display: -webkit-box;
@@ -966,7 +977,7 @@ textarea {
   border-radius: 10px;
 }
 
-#Create {
+.Create-button {
   width: 9.6rem;
   height: 3rem;
   border: 1px solid var(--orange-color);
@@ -984,6 +995,108 @@ textarea {
   margin-left: 2.1rem;
 }
 
+@media (max-width: 768px) {
+  .header-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+    width: 70px !important;
+    height: 70px !important;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    overflow: hidden;
+    -webkit-backdrop-filter: none !important;
+            backdrop-filter: none !important;
+    background-color: transparent !important;
+  }
+  .header-top .logo-wraper {
+    margin: 1em;
+  }
+  .header-top .header-a-logo {
+    display: none;
+  }
+  .a-wraper {
+    margin-left: 1em;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+  }
+  .a-wraper li {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 0.5em;
+  }
+  .a-wraper li .header-a {
+    margin-left: 0;
+  }
+  .information-2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .wraper-information {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+  }
+  .wraper-information .information-2__title {
+    margin-top: 14.2vw;
+    text-align: center;
+    font-size: 36px !important;
+  }
+  .wraper-information .information-text {
+    text-align: center;
+    font-size: 14px !important;
+    max-width: 80vh;
+  }
+  .login-button {
+    margin-left: 1em;
+  }
+  .curent-pice {
+    margin: 0;
+  }
+  .header-top:hover {
+    height: 100% !important;
+    width: 11em !important;
+    overflow: hidden;
+    border-radius: 0 !important;
+    background-color: rgba(17, 17, 29, 0.4) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+            backdrop-filter: blur(10px) !important;
+  }
+}
+@media (max-width: 425px) {
+  .wraper-information {
+    max-width: 100%;
+  }
+  .Explore-button,
+  .Create-button {
+    width: 7.6rem;
+  }
+}
+@media (max-width: 375px) {
+  .information-2__title {
+    margin-top: 30.2vw !important;
+  }
+  .wraper-information {
+    width: auto;
+  }
+}
 .Footer {
   margin: 10% 0;
 }
