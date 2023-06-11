@@ -3,11 +3,11 @@
         li.NewGenerationOfOnlineShopping {
             background-color: var(--main-bg-color);
             h1.First_Element_of_Generation {
+                margin: 0;
                 @include maxSizeHeaderText;
                 color: var(--black-color);
                 margin: 60px auto 20px;
                 padding-top: 3%;
-                width: 30%;
             }
             h5.Second_Element_of_Generation {
                 @include minSizeHeaderText;
