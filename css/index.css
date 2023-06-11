@@ -610,7 +610,6 @@ ul {
           flex-direction: column;
   margin: 20% 67% 0 5%;
   position: absolute;
-  height: 100vh;
 }
 .StayInTheLoop .row-main-loop .first-part .first-block li {
   margin-bottom: 6%;
