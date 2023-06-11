@@ -2,31 +2,36 @@
     margin: 10% 0;
     .body-Footer {
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         flex-wrap: wrap;
+
         li {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            margin-right: 10%;
+            @media (max-width: 768px) {
+            }
+
             &:last-child {
                 margin-right: 0px;
             }
             ul {
+                min-width: 200px;
                 &:first-child {
-                    max-width: 350px;
+                    @media (min-width: 1440px) {
+                        max-width: 350px;
+                    }
+                    @media (max-width: 1440px) {
+                        margin: auto 10%;
+                    }
+                    @media (max-width: 768px) {
+                        margin: 2%;
+                    }
+                    @media (max-width: 600px) {
+                        width: 200px;
+                    }
                 }
                 li {
                     ul {
-                        display: -webkit-box;
-                        display: -ms-flexbox;
                         display: flex;
-                        -webkit-box-align: center;
-                        -ms-flex-align: center;
                         align-items: center;
-                        -webkit-box-pack: center;
-                        -ms-flex-pack: center;
-                        justify-content: center;
                     }
                 }
             }
@@ -35,12 +40,6 @@
             width: 40px;
             height: 40px;
             margin-right: 17px;
-            background: -webkit-linear-gradient(
-                    0deg,
-                    rgba(0, 0, 0, 0.2),
-                    rgba(0, 0, 0, 0.2)
-                ),
-                -webkit-linear-gradient(140.08deg, #9cd2ee 3.42%, #00acee 95.98%);
             background: linear-gradient(
                     0deg,
                     rgba(0, 0, 0, 0.2),
@@ -48,10 +47,6 @@
                 ),
                 linear-gradient(140.08deg, #9cd2ee 3.42%, #00acee 95.98%);
             border-radius: 50%;
-            -webkit-border-radius: 50%;
-            -moz-border-radius: 50%;
-            -ms-border-radius: 50%;
-            -o-border-radius: 50%;
         }
         h3 {
             margin: 17px 0;

@@ -212,6 +212,158 @@ textarea {
   --orange-box-shadow: 15px 15px 35px rgba(226, 142, 15, 0.18);
 }
 
+.Authorization {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 20px;
+}
+
+.Login-button,
+.Registration-button {
+  color: var(--white-color);
+  background: var(--orange-gradient);
+  border: none;
+  outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 48px;
+  width: 155px;
+  border-radius: var(--border-radius-additional);
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.Login-form,
+.Registration-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+.Login-form .Login-form__list,
+.Login-form .Registration-form__list,
+.Registration-form .Login-form__list,
+.Registration-form .Registration-form__list {
+  padding: 30px;
+  border-radius: var(--border-radius-main);
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+}
+.Login-form .Login-form__list li,
+.Login-form .Registration-form__list li,
+.Registration-form .Login-form__list li,
+.Registration-form .Registration-form__list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.Login-form .Login-form__list li h3,
+.Login-form .Registration-form__list li h3,
+.Registration-form .Login-form__list li h3,
+.Registration-form .Registration-form__list li h3 {
+  text-transform: uppercase;
+  color: var(--black-color);
+  margin-bottom: 15px;
+}
+.Login-form .Login-form__list li p,
+.Login-form .Registration-form__list li p,
+.Registration-form .Login-form__list li p,
+.Registration-form .Registration-form__list li p {
+  margin: 20px 0;
+  font-size: 20px;
+  color: var(--black-color);
+}
+.Login-form .Login-form__list li input,
+.Login-form .Registration-form__list li input,
+.Registration-form .Login-form__list li input,
+.Registration-form .Registration-form__list li input {
+  margin-bottom: 20px;
+  height: 48px;
+  width: 300px;
+  padding-left: 34px;
+  border-radius: var(--border-radius-additional);
+  background-color: var(--main-cards-bg-color);
+  border: 1px solid var(--main-cards-bg-color);
+  color: var(--black-color);
+}
+.Login-form .Login-form__list li input:hover, .Login-form .Login-form__list li input:focus,
+.Login-form .Registration-form__list li input:hover,
+.Login-form .Registration-form__list li input:focus,
+.Registration-form .Login-form__list li input:hover,
+.Registration-form .Login-form__list li input:focus,
+.Registration-form .Registration-form__list li input:hover,
+.Registration-form .Registration-form__list li input:focus {
+  border: 1px solid var(--orange-color);
+}
+
+.Additional-login__ways {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.Additional-login__ways li:first-child {
+  margin-right: 10px;
+}
+.Additional-login__ways li:last-child {
+  margin-left: 10px;
+}
+.Additional-login__ways li button {
+  border: none;
+  outline: none;
+  border-radius: var(--border-radius-additional);
+  width: 135px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.Additional-login__ways li button img {
+  margin-right: 5px;
+}
+.Additional-login__ways li .Form-Facebook__button {
+  background: -webkit-gradient(linear, left top, left bottom, from(#3a5795), to(#2b4886));
+  background: linear-gradient(to bottom, #3a5795 0%, #2b4886 100%);
+  color: var(--white-color);
+}
+.Additional-login__ways li .Form-Google__button span:first-child {
+  color: #f94631;
+}
+.Additional-login__ways li .Form-Google__button span:nth-child(2) {
+  color: #ffbc43;
+}
+.Additional-login__ways li .Form-Google__button span:last-child {
+  color: #37a553;
+}
+
 .Main ul li.NewGenerationOfOnlineShopping {
   background-color: var(--main-bg-color);
 }
@@ -320,6 +472,8 @@ textarea {
 .Main ul .red-ring-modal section.modal-footer button,
 .Main ul .purple-ring-modal section.modal-footer button,
 .Main ul .blue-ring-modal section.modal-footer button {
+  border: none;
+  outline: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1362,34 +1516,45 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-.Footer .body-Footer li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 10%;
 }
 .Footer .body-Footer li:last-child {
   margin-right: 0px;
 }
-.Footer .body-Footer li ul:first-child {
-  max-width: 350px;
+.Footer .body-Footer li ul {
+  min-width: 200px;
+}
+@media (min-width: 1440px) {
+  .Footer .body-Footer li ul:first-child {
+    max-width: 350px;
+  }
+}
+@media (max-width: 1440px) {
+  .Footer .body-Footer li ul:first-child {
+    margin: auto 10%;
+  }
+}
+@media (max-width: 768px) {
+  .Footer .body-Footer li ul:first-child {
+    margin: 2%;
+  }
+}
+@media (max-width: 600px) {
+  .Footer .body-Footer li ul:first-child {
+    width: 200px;
+  }
 }
 .Footer .body-Footer li ul li ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .Footer .body-Footer .circle-Icon {
   width: 40px;
@@ -1397,10 +1562,6 @@ textarea {
   margin-right: 17px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(140.08deg, #9cd2ee 3.42%, #00acee 95.98%);
   border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
 }
 .Footer .body-Footer h3 {
   margin: 17px 0;
