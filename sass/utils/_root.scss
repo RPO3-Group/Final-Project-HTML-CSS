@@ -14,8 +14,6 @@
         ),
         linear-gradient(140.08deg, #9cd2ee 3.42%, #00acee 95.98%);
 
-    --header-crypto-shadow: -46px -61px 36px rgba(0, 0, 0, 0.25);
-
     --border-radius-main: 20px;
     --border-radius-additional: 10px;
     --border-radius-null: 0px;
@@ -24,7 +22,7 @@
     --box-shadow: 12px 18px 30px rgba(0, 0, 0, 0.1);
     --orange-box-shadow: 15px 15px 35px rgba(226, 142, 15, 0.18);
 }
-@mixin flex-center {
+@mixin Flex-center {
     display: flex;
     justify-content: center;
 }
@@ -60,4 +58,18 @@
     line-height: 33px;
     text-align: center;
     letter-spacing: 0.02em;
+}
+@mixin Form-button {
+    @include Flex-center;
+    align-items: center;
+    height: 48px;
+    width: 155px;
+    border-radius: var(--border-radius-additional);
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 20px;
+}
+@mixin Elements-none {
+    border: none;
+    outline: none;
 }

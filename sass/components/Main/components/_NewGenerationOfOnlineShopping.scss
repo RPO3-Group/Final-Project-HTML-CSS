@@ -4,14 +4,14 @@
             background-color: var(--main-bg-color);
             h1.First_Element_of_Generation {
                 @include maxSizeHeaderText;
-                @include color-black;
+                color: var(--black-color);
                 margin: 60px auto 20px;
                 padding-top: 3%;
                 width: 30%;
             }
             h5.Second_Element_of_Generation {
                 @include minSizeHeaderText;
-                @include color-black;
+                color: var(--black-color);
                 margin: 0 auto 3%;
                 width: 42%;
             }
@@ -41,6 +41,36 @@
                         color: var(--white-color);
                         background: var(--orange-gradient);
                     }
+                }
+            }
+        }
+        .green-ring-modal,
+        .red-ring-modal,
+        .purple-ring-modal,
+        .blue-ring-modal {
+            border-radius: 20px;
+            padding: 20px;
+            section.modal-content {
+                h4 {
+                    color: var(--black-color);
+                    @include maxSizeHeaderText;
+                    border-bottom: 2px solid var(--orange-color);
+                }
+                p {
+                    color: var(--black-color);
+                    @include minSizeHeaderText;
+                }
+            }
+            section.modal-footer {
+                display: flex;
+                justify-content: center;
+                button {
+                    @include Form-button;
+                    @include Elements-none;
+                    color: var(--white-color);
+                    background: var(--orange-gradient);
+                    border-radius: var(--border-radius-additional);
+                    box-shadow: var(--box-shadow);
                 }
             }
         }

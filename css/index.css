@@ -204,7 +204,6 @@ textarea {
           rgba(0, 0, 0, 0.2)
       ),
       linear-gradient(140.08deg, #9cd2ee 3.42%, #00acee 95.98%);
-  --header-crypto-shadow: -46px -61px 36px rgba(0, 0, 0, 0.25);
   --border-radius-main: 20px;
   --border-radius-additional: 10px;
   --border-radius-null: 0px;
@@ -276,6 +275,73 @@ textarea {
   cursor: pointer;
   color: var(--white-color);
   background: var(--orange-gradient);
+}
+.Main ul .green-ring-modal,
+.Main ul .red-ring-modal,
+.Main ul .purple-ring-modal,
+.Main ul .blue-ring-modal {
+  border-radius: 20px;
+  padding: 20px;
+}
+.Main ul .green-ring-modal section.modal-content h4,
+.Main ul .red-ring-modal section.modal-content h4,
+.Main ul .purple-ring-modal section.modal-content h4,
+.Main ul .blue-ring-modal section.modal-content h4 {
+  color: var(--black-color);
+  text-align: center;
+  letter-spacing: 0.02em;
+  font-weight: 700;
+  font-size: 48px;
+  border-bottom: 2px solid var(--orange-color);
+}
+.Main ul .green-ring-modal section.modal-content p,
+.Main ul .red-ring-modal section.modal-content p,
+.Main ul .purple-ring-modal section.modal-content p,
+.Main ul .blue-ring-modal section.modal-content p {
+  color: var(--black-color);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+.Main ul .green-ring-modal section.modal-footer,
+.Main ul .red-ring-modal section.modal-footer,
+.Main ul .purple-ring-modal section.modal-footer,
+.Main ul .blue-ring-modal section.modal-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.Main ul .green-ring-modal section.modal-footer button,
+.Main ul .red-ring-modal section.modal-footer button,
+.Main ul .purple-ring-modal section.modal-footer button,
+.Main ul .blue-ring-modal section.modal-footer button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 48px;
+  width: 155px;
+  border-radius: var(--border-radius-additional);
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: var(--white-color);
+  background: var(--orange-gradient);
+  border-radius: var(--border-radius-additional);
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
 }
 
 .ExclusiveNFTRingDrops {

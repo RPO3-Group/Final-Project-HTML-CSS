@@ -1,5 +1,4 @@
 const slider = document.querySelector(".swiper-container");
-var elems = document.querySelectorAll(".modal");
 
 const swiper = new Swiper(slider, {
     slidesPerView: 2,
@@ -12,7 +11,7 @@ const swiper = new Swiper(slider, {
         disableOnInteraction: false,
     },
 });
-
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function () {
+    var elems = document.querySelectorAll(".modal");
     var instances = M.Modal.init(elems);
 });

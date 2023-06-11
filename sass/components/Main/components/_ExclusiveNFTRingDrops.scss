@@ -3,7 +3,7 @@
 }
 
 .ExclusiveNFTRingDrops-title {
-    @include flex-center;
+    @include Flex-center;
     h1 {
         @include color-black;
         @include maxSizeHeaderText;
@@ -11,7 +11,7 @@
 }
 
 .ExclusiveNFTRingDrops-subtitle {
-    @include flex-center;
+    @include Flex-center;
     p {
         @include color-black;
         @include minSizeHeaderText;
