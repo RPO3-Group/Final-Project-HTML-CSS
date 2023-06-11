@@ -1,9 +1,71 @@
 .StayInTheLoop {
-    .row-head-loop {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        background: #f4f4f4;
-        padding: 2% 0;
+    position: relative;
+    .row-main-loop {
+        position: relative;
+        .first-part {
+            position: relative;
+            z-index: 1;
+            .first-block {
+                display: flex;
+                flex-direction: column;
+                margin: 20% 67% 0 5%;
+                position: absolute;
+                height: 100vh;
+                li {
+                    margin-bottom: 6%;
+                    h4 {
+                        font-size: 48px;
+                    }
+                }
+                .col-main-loop-input {
+                    position: relative;
+                    margin-top: 6%;
+                    .input-button-foooter-row {
+                        display: flex;
+                        flex-direction: row;
+                        position: relative;
+                        width: 100%;
+                        .input-button-foooter-col-1 {
+                            width: 100%;
+                            input {
+                                border-radius: 5px;
+                                border: none;
+                                height: 40px;
+                                width: calc(100% - 150px);
+                                padding: 2px 140px 2px 10px;
+                            }
+                            .input-button-foooter-col-2 {
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                button {
+                                    // display: block;
+                                    height: 44px;
+                                    padding: 2px;
+                                    border-radius: 5px;
+                                    border: none;
+                                    color: white;
+                                    font-weight: bold;
+                                    padding: 0 26px;
+                                    background: linear-gradient(
+                                        132.95deg,
+                                        #ffc301 9.31%,
+                                        #ff6533 79.4%
+                                    );
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .second-part {
+            position: relative;
+            overflow: hidden;
+            max-width: 100%;
+            img {
+                width: 100%;
+            }
+        }
     }
 }
