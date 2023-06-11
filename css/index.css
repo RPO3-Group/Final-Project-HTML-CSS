@@ -696,7 +696,7 @@ ul {
     text-align: center;
   }
   .StayInTheLoop .row-main-loop .first-part .first-block li h4 {
-    margin: 4% 1% 0;
+    margin: 4% 4% 0 4%;
     font-size: 28px;
     text-align: center;
   }
@@ -776,6 +776,14 @@ ul {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .StayInTheLoop .row-head-loop {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 .Footer {
