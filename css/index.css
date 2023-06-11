@@ -590,58 +590,6 @@ ul {
   max-width: 770px;
 }
 
-.BrowseByCategory {
-  position: relative;
-}
-.BrowseByCategory .row-head-loop {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #f4f4f4;
-  padding: 3% 0;
-}
-.BrowseByCategory .row-head-loop .col-head-loop img {
-  max-width: 90%;
-  height: auto;
-}
-
-@media screen and (min-width: 425px) and (max-width: 650px) {
-  .BrowseByCategory .row-head-loop {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .BrowseByCategory .row-head-loop .col-head-loop {
-    scale: 0.9;
-  }
-  .BrowseByCategory .row-head-loop .blockchain {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
-  }
-  .BrowseByCategory .row-head-loop .tether {
-    scale: 0.8;
-  }
-  .BrowseByCategory .row-head-loop .etherium {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-    scale: 0.8;
-  }
-  .BrowseByCategory .row-head-loop .btc {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
-  }
-}
 .StayInTheLoop {
   position: relative;
 }
@@ -777,6 +725,58 @@ ul {
   .StayInTheLoop .row-main-loop .first-part .first-block .col-main-loop-input {
     margin: 1%;
     scale: 0.8;
+  }
+}
+.StayInTheLoop {
+  position: relative;
+}
+.StayInTheLoop .row-head-loop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f4f4f4;
+  padding: 3% 0;
+}
+.StayInTheLoop .row-head-loop .col-head-loop img {
+  max-width: 90%;
+  height: auto;
+}
+
+@media screen and (min-width: 425px) and (max-width: 650px) {
+  .StayInTheLoop .row-head-loop {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .StayInTheLoop .row-head-loop .col-head-loop {
+    scale: 0.9;
+  }
+  .StayInTheLoop .row-head-loop .blockchain {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .StayInTheLoop .row-head-loop .tether {
+    scale: 0.8;
+  }
+  .StayInTheLoop .row-head-loop .etherium {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    scale: 0.8;
+  }
+  .StayInTheLoop .row-head-loop .btc {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
   }
 }
 .Footer {
