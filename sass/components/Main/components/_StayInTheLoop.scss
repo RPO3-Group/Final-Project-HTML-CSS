@@ -1,19 +1,230 @@
-.Emblems {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-
-    padding-top: 40px;
-    padding-bottom: 52px;
-}
-img.background {
-    min-height: 100%;
-    min-width: auto;
-    width: 100%;
-    height: auto;
-    position: absolute;
-}
-.InfoStay {
+.StayInTheLoop {
     position: relative;
+    .row-main-loop {
+        position: relative;
+        .first-part {
+            position: relative;
+            z-index: 1;
+            .first-block {
+                display: flex;
+                flex-direction: column;
+                margin: 20% 67% 0 5%;
+                position: absolute;
+                li {
+                    margin-bottom: 6%;
+                    h4 {
+                        font-size: 48px;
+                    }
+                }
+                .col-main-loop-input {
+                    position: relative;
+                    margin-top: 6%;
+                    .input-button-foooter-row {
+                        display: flex;
+                        flex-direction: row;
+                        position: relative;
+                        width: 100%;
+                        .input-button-foooter-col-1 {
+                            width: 100%;
+                            input {
+                                border-radius: 5px;
+                                border: none;
+                                height: 40px;
+                                width: calc(100% - 150px);
+                                padding: 2px 140px 2px 10px;
+                            }
+                            .input-button-foooter-col-2 {
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                button {
+                                    // display: block;
+                                    height: 44px;
+                                    padding: 2px;
+                                    border-radius: 5px;
+                                    border: none;
+                                    color: white;
+                                    font-weight: bold;
+                                    padding: 0 26px;
+                                    background: linear-gradient(
+                                        132.95deg,
+                                        #ffc301 9.31%,
+                                        #ff6533 79.4%
+                                    );
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .second-part {
+            position: relative;
+            overflow: hidden;
+            max-width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    .StayInTheLoop {
+        .row-main-loop {
+            .first-part {
+                .first-block {
+                    margin: 15% 63% 0 5%;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .StayInTheLoop {
+        .row-main-loop {
+            .first-part {
+                .first-block {
+                    margin: 10% 40% 0 5%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 650px) and (max-width: 768px) {
+    .StayInTheLoop {
+        .row-main-loop {
+            .first-part {
+                .first-block {
+                    margin: 10% 5% 0 5%;
+                    li {
+                        margin-bottom: 1%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 650px) {
+    .StayInTheLoop {
+        .row-main-loop {
+            .first-part {
+                .first-block {
+                    margin: 0;
+
+                    .col-main-loop-text {
+                        margin: 1% 0;
+                    }
+                    li {
+                        margin-bottom: 1%;
+                        text-align: center;
+                        h4 {
+                            margin: 4% 4% 0 4%;
+                            font-size: 28px;
+                            text-align: center;
+                        }
+                    }
+                    .col-main-loop-input {
+                        margin: 5%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 425px) {
+    .StayInTheLoop {
+        .row-main-loop {
+            .first-part {
+                .first-block {
+                    margin: 0;
+                    .col-main-loop-text {
+                        margin: 1% 0;
+                        font-size: 14px;
+                    }
+                    li {
+                        margin-bottom: 1%;
+                        text-align: center;
+                        h4 {
+                            margin: 3.5% 0 0 0;
+                            font-size: 20px;
+                            text-align: center;
+                        }
+                    }
+                    .col-main-loop-input {
+                        margin: 1%;
+                        scale: 0.8;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.StayInTheLoop {
+    position: relative;
+    .row-head-loop {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background: #f4f4f4;
+        padding: 3% 0;
+        .col-head-loop {
+            img {
+                max-width: 90%;
+                height: auto;
+            }
+        }
+    }
+}
+
+// @media screen and (min-width: 1024px) and (max-width: 1440px) {
+//     .StayInTheLoop {
+//     }
+// }
+
+// @media screen and (min-width: 768px) and (max-width: 1024px) {
+//     .StayInTheLoop {
+//     }
+// }
+
+// @media screen and (min-width: 650px) and (max-width: 768px) {
+//     .StayInTheLoop {
+//     }
+// }
+
+@media screen and (min-width: 425px) and (max-width: 650px) {
+    .StayInTheLoop {
+        .row-head-loop {
+            // flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            .col-head-loop {
+                scale: 0.9;
+            }
+            .blockchain {
+                order: 3;
+            }
+            .tether {
+                scale: 0.8;
+            }
+            .etherium {
+                order: 2;
+                scale: 0.8;
+            }
+            .btc {
+                order: 3;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+    .StayInTheLoop {
+        .row-head-loop {
+            flex-direction: column;
+        }
+    }
 }
